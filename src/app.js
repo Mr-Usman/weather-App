@@ -66,26 +66,8 @@ app.get("/weather", (req, res) => {
         });
       }
     );
-    // res.send({
-    //   // json can be Object or an array
-    //   forecast: "48 degress",
-    //   location: "Lahore",
-    //   address: req.query.address
-    // });
   }
 });
-
-// app.get("/products", (req, res) => {
-//   if (!req.query.search) {
-//     return res.send({
-//       error: "you must provide a search term"
-//     });
-//   }
-//   console.log(req.query.search);
-//   res.send({
-//     products: []
-//   });
-// });
 
 app.get("/help/*", (req, res) => {
   res.render("404", {
